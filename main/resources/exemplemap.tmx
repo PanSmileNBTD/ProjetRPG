@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="watergrass" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="map/tuiles/LPC Base Assets/tiles/watergrass.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="19" name="waterfall" tilewidth="32" tileheight="32" tilecount="15" columns="3">
+  <image source="map/tuiles/LPC Base Assets/tiles/waterfall.png" width="96" height="160"/>
+ </tileset>
+ <tileset firstgid="34" name="grassalt" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="map/tuiles/LPC Base Assets/tiles/grassalt.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="52" name="lava" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="map/tuiles/LPC Base Assets/tiles/lava.png" width="96" height="192"/>
+ </tileset>
+ <layer name="Calque de Tile 1" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+ <layer name="Calque 2" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1jsOwzAMA1DvuUrP0Psfq2th1IHkUKKpauAQBIj5IudzjTGuTqeTntcUdp922C3z+Ui39956DVnzi1hjZajgiOofOf9TDIrvoyoWdYelv4KlisNrYXdFedgdvR52h8pR3Rcrg7KnguMEA+L7xHZ4DR4HuuPqGDmP+TqM/Xryf4Knw6kG1OyUDJUcdxZ2rw5vL7B7IAzq+7nKO+Zfvl3Zrifr7li+r21Zc+cfcef+PbEg54jaA4i+b0OiHQiLxbGyZDyLGY7sVHHcuZQdv0zqjjnq/Tv6+QAU6q7A
+  </data>
+ </layer>
+ <imagelayer name="Calque d'image 1"/>
+ <objectgroup name="Calque d'objets 1"/>
+ <layer name="Calque 3" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+</map>
