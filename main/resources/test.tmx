@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="barrel" tilewidth="32" tileheight="32" tilecount="8" columns="4">
+  <image source="map/tuiles/LPC Base Assets/tiles/barrel.png" width="128" height="64"/>
+ </tileset>
+ <layer name="Calque de Tile 1" width="30" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+2WwQ6AMAhD58H//2VPJIQAK2VuB23CwYi+biJsjLO6yGeyQHQT3HsSFf4qoXxkzxj/mu8xkT3T3qse5FnPU+Q18sWsPbuOvHp+O3WD1HJUI29zdS77jTtcybfrZ2ud9W1rrtq7mH4lTPueqG95fJaLKPvvqlxvrUw+w63kRvlMTaPMqB8y3BlLotILq/Pc3s9mUMRGIuOs3LeZv1897T6Tae4JdjZjdvKRedc5w7Nesvi6HuaO4/8QDgAA
+  </data>
+ </layer>
+</map>
