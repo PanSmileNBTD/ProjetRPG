@@ -18,7 +18,9 @@ public class SimpleSlickGame extends BasicGame {
     private TiledMap map;
 
     private float x = 300, y = 300;
+    private float xCamera = x, yCamera = y;
     private int direction = 0;
+    private int oldDirection = -1;
     private boolean moving = false;
     private Animation[] animations = new Animation[8];
 
@@ -51,18 +53,30 @@ public class SimpleSlickGame extends BasicGame {
     public void keyPressed(int key, char c) {
         switch(key) {
             case Input.KEY_UP:
+                if(this.moving) {
+                    this.oldDirection = this.direction;
+                }
                 this.direction = 0;
                 this.moving = true;
                 break;
             case Input.KEY_LEFT:
+                if(this.moving) {
+                    this.oldDirection = this.direction;
+                }
                 this.direction = 1;
                 this.moving = true;
                 break;
             case Input.KEY_DOWN:
+                if(this.moving) {
+                    this.oldDirection = this.direction;
+                }
                 this.direction = 2;
                 this.moving = true;
                 break;
             case Input.KEY_RIGHT:
+                if(this.moving) {
+                    this.oldDirection = this.direction;
+                }
                 this.direction = 3;
                 this.moving = true;
                 break;
@@ -74,22 +88,54 @@ public class SimpleSlickGame extends BasicGame {
         switch(key) {
             case Input.KEY_UP:
                 if(this.direction == 0) {
-                    this.moving = false;
+                    if(this.oldDirection != -1) {
+                        this.direction = this.oldDirection;
+                        this.oldDirection = -1;
+                    } else {
+                        this.moving = false;
+                    }
+                }
+                if(this.oldDirection == 0) {
+                    this.oldDirection = -1;
                 }
                 break;
             case Input.KEY_LEFT:
                 if(this.direction == 1) {
-                    this.moving = false;
+                    if(this.oldDirection != -1) {
+                        this.direction = this.oldDirection;
+                        this.oldDirection = -1;
+                    } else {
+                        this.moving = false;
+                    }
+                }
+                if(this.oldDirection == 1) {
+                    this.oldDirection = -1;
                 }
                 break;
             case Input.KEY_DOWN:
                 if(this.direction == 2) {
-                    this.moving = false;
+                    if(this.oldDirection != -1) {
+                        this.direction = this.oldDirection;
+                        this.oldDirection = -1;
+                    } else {
+                        this.moving = false;
+                    }
+                }
+                if(this.oldDirection == 2) {
+                    this.oldDirection = -1;
                 }
                 break;
             case Input.KEY_RIGHT:
                 if(this.direction == 3) {
-                    this.moving = false;
+                    if(this.oldDirection != -1) {
+                        this.direction = this.oldDirection;
+                        this.oldDirection = -1;
+                    } else {
+                        this.moving = false;
+                    }
+                }
+                if(this.oldDirection == 3) {
+                    this.oldDirection = -1;
                 }
                 break;
         }
@@ -114,10 +160,28 @@ public class SimpleSlickGame extends BasicGame {
                     break;
             }
         }
+
+        // Camera
+        int w = gc.getWidth() / 4;
+        if(this.x > this.xCamera + w) {
+            this.xCamera = this.x - w;
+        }
+        if(this.x < this.xCamera - w) {
+            this.xCamera = this.x + w;
+        }
+        int h = gc.getHeight() / 4;
+        if(this.y > this.yCamera + h) {
+            this.yCamera = this.y - h;
+        }
+        if(this.y < this.yCamera - h) {
+            this.yCamera = this.y + h;
+        }
     }
 
     @Override
     public void render(GameContainer gc, Graphics g) {
+
+        g.translate(gc.getWidth() / 2 - (int) this.xCamera, gc.getHeight() / 2 - (int) this.yCamera);
 
         this.map.render(0, 0);
         g.drawString("Hello World!", 100, 100);
