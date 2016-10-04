@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="grass" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/grass.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="19" name="bridges" tilewidth="32" tileheight="32" tilecount="42" columns="6">
+  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/bridges.png" width="192" height="224"/>
+ </tileset>
+ <tileset firstgid="61" name="stairs" tilewidth="32" tileheight="32" tilecount="112" columns="8">
+  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/stairs.png" width="256" height="448"/>
+ </tileset>
+ <tileset firstgid="173" name="watergrass" tilewidth="32" tileheight="32" tilecount="18" columns="3">
+  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/watergrass.png" width="96" height="192"/>
+ </tileset>
+ <tileset firstgid="191" name="house" tilewidth="32" tileheight="32" tilecount="63" columns="9">
+  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/house.png" width="288" height="224"/>
+ </tileset>
+ <tileset firstgid="254" name="signs" tilewidth="32" tileheight="32" tilecount="6" columns="3">
+  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/signs.png" width="96" height="64"/>
+ </tileset>
+ <tileset firstgid="260" name="mountains" tilewidth="32" tileheight="32" tilecount="108" columns="12">
+  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/mountains.png" width="384" height="288"/>
+ </tileset>
+ <layer name="Calque de Tile 1" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3VPQ/BQBzH8Stjpy4mbH0hJGzEw0jjRXpmQGIQiUFs2LBhE6ufpE1ErvfQB3eRDp/pmuu3/2takxBiaooY6hsS6uzhAEcNWmhObt8l5D7pmN7zK5zhrsGsaB5wg6cGLTQzmMNCgxaaFSxhrUELzRY2sBO8vgs9BpOz3o/5eQYwZLA566OkL+n7474s5Bhsznpe4l6pAP9MlfMrobfMaVbVV0NXHRrQZDSq6Hu3tcFxfTZaP+izGLy5OV86bqN3nbfXGCYMJmd9KtHn18ZrjNp3F+1MVTbS5ibSpqJRts2vkdUa5Lsqc6a8Rr93Joywbbw5hmlsSbQVoBjhWYuQmU8FqoJzzBjR9L0AzjHWX8ASAAA=
+  </data>
+ </layer>
+</map>
