@@ -1,29 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="32" tileheight="32" nextobjectid="1">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="32" tileheight="32" nextobjectid="3">
  <tileset firstgid="1" name="grass" tilewidth="32" tileheight="32" tilecount="18" columns="3">
-  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/grass.png" width="96" height="192"/>
+  <image source="map/tuiles/LPC Base Assets/tiles/grass.png" width="96" height="192"/>
  </tileset>
  <tileset firstgid="19" name="bridges" tilewidth="32" tileheight="32" tilecount="42" columns="6">
-  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/bridges.png" width="192" height="224"/>
+  <image source="map/tuiles/LPC Base Assets/tiles/bridges.png" width="192" height="224"/>
  </tileset>
  <tileset firstgid="61" name="stairs" tilewidth="32" tileheight="32" tilecount="112" columns="8">
-  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/stairs.png" width="256" height="448"/>
+  <image source="map/tuiles/LPC Base Assets/tiles/stairs.png" width="256" height="448"/>
  </tileset>
  <tileset firstgid="173" name="watergrass" tilewidth="32" tileheight="32" tilecount="18" columns="3">
-  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/watergrass.png" width="96" height="192"/>
+  <image source="map/tuiles/LPC Base Assets/tiles/watergrass.png" width="96" height="192"/>
  </tileset>
  <tileset firstgid="191" name="house" tilewidth="32" tileheight="32" tilecount="63" columns="9">
-  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/house.png" width="288" height="224"/>
+  <image source="map/tuiles/LPC Base Assets/tiles/house.png" width="288" height="224"/>
  </tileset>
  <tileset firstgid="254" name="signs" tilewidth="32" tileheight="32" tilecount="6" columns="3">
-  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/signs.png" width="96" height="64"/>
+  <image source="map/tuiles/LPC Base Assets/tiles/signs.png" width="96" height="64"/>
  </tileset>
  <tileset firstgid="260" name="mountains" tilewidth="32" tileheight="32" tilecount="108" columns="12">
-  <image source="../main/resources/map/tuiles/LPC Base Assets/tiles/mountains.png" width="384" height="288"/>
+  <image source="map/tuiles/LPC Base Assets/tiles/mountains.png" width="384" height="288"/>
  </tileset>
- <layer name="Calque de Tile 1" width="40" height="30">
+ <tileset firstgid="368" name="solid" tilewidth="32" tileheight="32" tilecount="25" columns="5">
+  <image source="map/tuiles/solid.png" width="160" height="160"/>
+ </tileset>
+ <layer name="solid" width="40" height="30">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAC+3VPQ/BQBzH8Stjpy4mbH0hJGzEw0jjRXpmQGIQiUFs2LBhE6ufpE1ErvfQB3eRDp/pmuu3/2takxBiaooY6hsS6uzhAEcNWmhObt8l5D7pmN7zK5zhrsGsaB5wg6cGLTQzmMNCgxaaFSxhrUELzRY2sBO8vgs9BpOz3o/5eQYwZLA566OkL+n7474s5Bhsznpe4l6pAP9MlfMrobfMaVbVV0NXHRrQZDSq6Hu3tcFxfTZaP+izGLy5OV86bqN3nbfXGCYMJmd9KtHn18ZrjNp3F+1MVTbS5ibSpqJRts2vkdUa5Lsqc6a8Rr93Joywbbw5hmlsSbQVoBjhWYuQmU8FqoJzzBjR9L0AzjHWX8ASAAA=
+   H4sIAAAAAAAAC+3W3Q6CMAyGYXrHJEMHeKCXLgS/oGar+21nsjfpEWAeloEMQ7uNpC3oabbQOS1m6NijU6av1j4f6ZwW6768/sF3ifCt23lXZva447fK62CZ38c9cvc6d5+37vudpc9n/nvg801tn2Qp7zzN9TMB3wla+8+8XccZNXzGcY3PKO1z2ZDLeH/9H/pmjzv+iPBxNs4oUYgNSRtjbEjKmGJDocbUb8kcG6q1jiVsqLSxpA1pPdcxlTI+AZsG5iLAEgAA
+  </data>
+ </layer>
+ <layer name="terrain" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3SuwrCQBCF4d16qzRWapcHUdBO8VJq8CG968t5hCzIkp3JapKRMMVfTQgfJ3HGGKdpmqZpgh3Ricgx93PLvgu6EuXM/aY+9fXYN0Qjopy5j3u838waM7f/6VvBtUYbtCWMEr63bY+Ksk9j1oEvI/K7FUGH0uif8++6oweRY+7PBF/MxhmbLnRVfVNJY9VudWwSxlRbzNiG9VtbaIz9M5I2bsdfjLsE2wRNO/7WKfss0LLmjgPbjO8FG3cZOsASAAA=
+  </data>
+ </layer>
+ <layer name="constructionsDerriere" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WMQqAMBBE0aj3P5MKFkGwEK9gqXaS1rnAVrqsyn/w2zBFCEnpxaroAYC/xumeb2pVh8/xt51qVyV6iKFVneqDd1iyGtQYPcQwq0kt0UMA/ErN3xAAHsW7ii+5AIWSX+rAEgAA
+  </data>
+ </layer>
+ <layer name="constructionsDevant" width="40" height="30">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC+3WsQkAIAwF0bi4lVOqnbiHgq1WBpLAPfitXCGiiF85WRfAUt1re9065GHI6Zuf52jf85Lu8yJqX4RGL7x2AYiPvyEA6OJdRSQLudl8c8ASAAA=
   </data>
  </layer>
 </map>
